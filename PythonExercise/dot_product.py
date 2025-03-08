@@ -1,6 +1,6 @@
 import time
 import numpy as np
-from data_loader import load_csv
+from PythonExercise.data_loader import load_csv
 
 def main():
     # Load x values from L1.csv and Q1.csv into Python arrays

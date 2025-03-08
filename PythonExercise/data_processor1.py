@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import random
-from data_loader import load_csv
+from PythonExercise.data_loader import load_csv
 
 def calculate_mean(data):
     return np.mean(data, axis=0)
