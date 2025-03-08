@@ -3,8 +3,8 @@ import json
 import csv
 
 def main():
-    # Declare a two-dimensional array capable of storing 100,000,000 pairs of floating-point numbers (y,x)
-    float_array = [[0.0, 0.0] for _ in range(100000000)]
+    # Declare a two-dimensional array capable of storing 1,000,000 pairs of floating-point numbers (y,x)
+    float_array = [[0.0, 0.0] for _ in range(1000000)]
     
     # Randomly generates x values in the range [-1000.0, +1000.0]
     for i in range(len(float_array)):
@@ -14,8 +14,8 @@ def main():
         
     # Populate the array with the generated pairs and display the first, middle, and last pairs
     print(float_array[0])
-    print(float_array[50000000])
-    print(float_array[99999999])
+    print(float_array[500000])
+    print(float_array[999999])
     
     # Save the data to "L1.json"
     with open("L1.json", "w") as json_file:
@@ -26,8 +26,8 @@ def main():
         writer = csv.writer(csv_file)
         writer.writerows(float_array)
 
-    # Declare another two-dimensional array capable of storing 100,000,000 pairs of floating-point numbers (y,x)
-    float_array_2 = [[0.0, 0.0] for _ in range(100000000)]
+    # Declare another two-dimensional array capable of storing 1,000,000 pairs of floating-point numbers (y,x)
+    float_array_2 = [[0.0, 0.0] for _ in range(1000000)]
     
     # Randomly generates x values in the range [-1000.0, +1000.0]
     for i in range(len(float_array_2)):
@@ -37,8 +37,8 @@ def main():
         
     # Populate the array with the generated pairs and display the first, middle, and last pairs
     print(float_array_2[0])
-    print(float_array_2[50000000])
-    print(float_array_2[99999999])
+    print(float_array_2[500000])
+    print(float_array_2[999999])
     
     # Save the data to "Q1.csv"
     with open("Q1.csv", "w", newline='') as csv_file:
